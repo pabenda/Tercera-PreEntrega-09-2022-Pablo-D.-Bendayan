@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>deShoppings - Contacto</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pablo D. Bendayan">
+    <meta name="description" content="Gestion integral de Centros Comerciales">
+    <meta name="keywords" content="shopping, centro comercial, locales, marcas, administracion, marketing,">
+    <link rel="shortcut icon" href="../images/isologo.png">
+    <link rel="stylesheet" href="../css/contacto.css">
+</head>
+
+<body>
+    <div id="grid-contacto">
+        <header class="contacto-encabezado">
+            <a href="../index.html"><img src="../images/isologo.png" alt="Logo"></a>
+            <a href="../index.html" class="contacto-nav-texto">Inicio</a>
+            <a href="../pages/nosotros.html" class="contacto-nav-texto">Nosotros</a>
+            <a href="../pages/servicios.html" class="contacto-nav-texto">Servicios</a>
+            <a href="../pages/contacto.html" class="contacto-nav-texto">Contacto</a>
+            <a href="../pages/notas.html" class="contacto-nav-texto">Notas</a>
+        </header>
+
+        <main>
+            <div>
+                <img src="../images/imagen-shopping-2.png" alt="vista de un shopping">
+            </div>
+            <fieldset class="contacto-formulario">
+                <legend>Ingrese sus datos y lo contactaremos</legend>
+                <!-- Tipo de Consulta -->
+                <div>
+                    <label for="">Tipo de consulta</label>
+                </div>
+                <input type="radio" name="subject" value="Comercial" required> Comercial
+                <input type="radio" name="subject" value="Otras"> Otras
+                <form>
+                    <div>
+                        <label for="name"> Nombre y Apellido</label>
+                    </div>
+                    <input type="text" id="name" name="name" placeholder="Ingrese nombre y apellido" required size="50">
+                    <br>
+                    <div>
+                        <label for="cellphone"> Celular</label>
+                    </div>
+                    <input type="number" id="cellphone" name="cellphone" placeholder="Ingrese celular" required>
+                    <div>
+                        <label for="mail"> eMail</label>
+                    </div>
+                    <input type="email" id="email" name="email" placeholder="Ingrese su eMail" required size="30">
+                    <div>
+                        <label for="">Ingrese su consulta</label>
+                        <div class="textarea1">
+                            <textarea placeholder="Ingrese su consulta" size="300"></textarea>
+                        </div>
+                        <br>
+                        <form>
+                            <input type="submit" value="enviar formulario">
+                            <input type="reset" value="limpiar formulario">
+                        </form>
+                    </div>
+                </form>
+            </fieldset>
+        </main>
+
+        <footer>
+            <!--link redes sociales-->
+            <div class="contacto-pie">
+               <a href="http://www.facebook.com/deshoppings" target="_blank"><img src="../images/facebook.png"
+                       alt="logo facebook"></a>
+               &nbsp;
+               <a href="http://www.instagram.com/deshoppings" target="_blank"><img src="../images/instagram.jpg"
+                       alt="logo instagram"></a>
+               &nbsp;
+               <a href="http://www.linkedin.com/deshoppings" target="_blank"><img src="../images/linkedin.png"
+                       alt="logo linkedin"></a>
+               &nbsp;
+               <a href="http://www.twitter.com/deshoppings" target="_blank"><img src="../images/twitter.png"
+                       alt="logo twitter"></a>
+
+             <!--copyright y contacto por mail-->
+               <span>deShoppings.com.ar - Todos los derechos reservados 2022 - Escribinos a <a href="mailto:contacto@deshoppings.com.ar">contacto@deshoppings.com.ar</a></span>
+           </div>
+       </footer>
+    </div>
+</body>
+
+</html>
