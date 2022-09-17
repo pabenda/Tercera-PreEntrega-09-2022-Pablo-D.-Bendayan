@@ -29,6 +29,20 @@ a:active {
     grid-row-gap: 0.5%;
 }
 
+@media screen and (max-width: 599px) {
+    #grid-index {
+        display: grid;
+        height: 100%;
+        grid-template-areas: 
+            "header"
+            "main"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-row-gap: 0.5%;
+    }
+}
+
 header {
     grid-area: header;
     width: 100%;
