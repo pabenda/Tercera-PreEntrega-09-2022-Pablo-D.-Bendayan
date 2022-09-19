@@ -25,8 +25,7 @@ a:active {
         "main"
         "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: 20% auto 15%;
-    grid-row-gap: 0.5%;
+    grid-template-rows: 19% auto 15%;
 }
 
 @media screen and (max-width: 599px) {
@@ -87,4 +86,5 @@ footer {
     padding: 1%;
     color: aliceblue;
     flex-wrap: wrap;
+    font-size: 12px;
 }
