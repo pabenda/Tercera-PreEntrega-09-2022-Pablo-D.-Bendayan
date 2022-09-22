@@ -25,8 +25,7 @@ a:active {
         "main"
         "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-row-gap: 0.5%;
+    grid-template-rows: auto auto auto;
 }
 
 @media screen and (max-width: 599px) {
@@ -38,8 +37,7 @@ a:active {
             "main"
             "footer";
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto;
-        grid-row-gap: 0.5%;
+        grid-template-rows: auto auto auto;
     }
 }
 
@@ -54,7 +52,7 @@ main {
     padding-top: 1%;
     padding: 1%;
     align-self: center;
-    justify-self: center;
+    justify-content: center;
     border: solid 2px aliceblue;
     color: aliceblue;
 }
