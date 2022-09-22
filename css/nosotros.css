@@ -25,8 +25,7 @@ a:active {
         "main"
         "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-row-gap: 0.5%;
+    grid-template-rows: auto auto auto;
 }
 
 @media screen and (max-width: 599px) {
@@ -38,21 +37,17 @@ a:active {
             "main"
             "footer";
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto;
-        grid-row-gap: 0.5%;
+        grid-template-rows: auto auto auto;
     }
 }
 
 header {
     grid-area: header;
-    width: 100%;
-    padding: 0.3%;
+    padding: 2%;
 }
 
 main {
     grid-area: main;
-    padding-top: 1%;
-    padding: 1%;
     align-self: center;
     justify-self: center;
     border: solid 2px aliceblue;
@@ -82,18 +77,16 @@ footer {
 .nosotros-pie {
     display: flex;
     justify-content: space-around;
-    padding: 0.5%;
     color: aliceblue;
     flex-wrap: wrap;
     font-size: 12px;
     align-items: center;
+    flex-direction: row;
 }
 
 .nosotros-titulo1 {
     font-size: 12px;
-    margin-left: 9%;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    margin: auto;
 }
 
 .nosotros-tabla1 {
@@ -103,7 +96,7 @@ footer {
 .nosotros-titulo2 {
     margin-top: 3%;
     font-size: 12px;
-    margin-bottom: 3%;
+    padding:2%
 }
 
 .nosotros-marcas {
@@ -112,5 +105,6 @@ footer {
     flex-wrap: wrap;
     font-size: 12px;
     justify-content: space-around;
-    margin-bottom: 2%;
+    margin: auto;
+    padding: 2%;
 }

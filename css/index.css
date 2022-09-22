@@ -80,11 +80,11 @@ footer {
 .index-pie {
     display: flex;
     justify-content: space-around;
-    padding: 0.5%;
     color: aliceblue;
     flex-wrap: wrap;
     font-size: 12px;
     align-items: center;
+    flex-direction: row;
 }
 
 .index-imagen-textos {
