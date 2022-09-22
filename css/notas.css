@@ -36,6 +36,7 @@ a:active {
         grid-template-areas: 
             "header"
             "main"
+            "main"
             "footer";
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto auto;
@@ -49,10 +50,7 @@ header {
 }
 
 main {
-    grid-area: main;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    display: flexbox;
     color: aliceblue;
     font-size: 13px;
     padding: 0.5%;
@@ -89,4 +87,20 @@ footer {
     flex-wrap: wrap;
     font-size: 12px;
     align-items: center;
+}
+
+.notas-par1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+.notas-par2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 5%;
 }
