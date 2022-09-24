@@ -4,6 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+    "build-css": "node-sass --include-path scss C:\Users\Pablob\Desktop\Coderhouse\PreEntrega 09 2022-Pablo D. Bendayan\sitio 3ra entregascss/index.scss C:\Users\Pablob\Desktop\Coderhouse\PreEntrega 09 2022-Pablo D. Bendayan\sitio 3ra entregacss/index.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
     "type": "git",
