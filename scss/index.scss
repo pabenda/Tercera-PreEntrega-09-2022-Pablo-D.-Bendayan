@@ -1,5 +1,6 @@
 $color-letras: aliceblue;
 $gradiente-back: linear-gradient(blue,black);
+$ancho-pantalla: 1200px;
 
 html, body {
     height: 100%;
@@ -20,7 +21,7 @@ a:active {
     color: aqua;
 }
 
-#grid-index {
+#index {
     display: grid;
     height: 100%;
     grid-template-areas: 
@@ -29,10 +30,20 @@ a:active {
         "footer";
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
+    #encabezado {
+        display: flex;
+        flex-direction: row;
+        border: 1px solid $color-letras;
+        align-items: center;
+        justify-content: space-around;
+        font-weight: bold;
+        text-decoration: double;
+        flex-wrap: wrap;
+     }
 }
 
-@media screen and (max-width: 599px) {
-    #grid-index {
+@media screen and (max-width: $ancho-pantalla/2-1) {
+    #index {
         display: grid;
         height: 100%;
         grid-template-areas: 
@@ -41,6 +52,16 @@ a:active {
             "footer";
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
+        #encabezado {
+            display: flex;
+            flex-direction: row;
+            border: 1px solid $color-letras;
+            align-items: center;
+            justify-content: space-around;
+            font-weight: bold;
+            text-decoration: double;
+            flex-wrap: wrap;
+         }
     }
 }
 
@@ -64,17 +85,6 @@ footer {
     grid-area: footer;
 }
 
-.index-encabezado {
-    display: flex;
-    flex-direction: row;
-    border: 1px solid $color-letras;
-    align-items: center;
-    justify-content: space-around;
-    font-weight: bold;
-    text-decoration: double;
-    flex-wrap: wrap;
-}
-
 .index-nav-texto {
     font-style: bold;
     font-size: larger;
@@ -90,12 +100,6 @@ footer {
     flex-direction: row;
 }
 
-.index-imagen-textos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
 .index-textos-laterales {
     border: solid 1px $color-letras;
     margin-left: 00.5%;
@@ -104,6 +108,12 @@ footer {
     justify-content: space-around;
     padding: 00.5%;
     width: 55%;
+}
+
+.index-imagen-textos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .index-logo:hover{
