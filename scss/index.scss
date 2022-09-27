@@ -1,8 +1,9 @@
 $color-letras: aliceblue;
+$gradiente-back: linear-gradient(blue,black);
 
 html, body {
     height: 100%;
-    background: linear-gradient(blue,black);
+    background: $gradiente-back;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
