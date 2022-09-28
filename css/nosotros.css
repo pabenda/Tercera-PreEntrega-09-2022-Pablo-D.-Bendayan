@@ -109,6 +109,10 @@ footer {
     padding: 2%;
 }
 
+.nosotros-logo {
+    border-radius: 9px;
+}
+
 .nosotros-logo:hover{
     width: 100%;
     height: 100%;

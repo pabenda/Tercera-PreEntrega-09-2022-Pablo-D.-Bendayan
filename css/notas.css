@@ -98,6 +98,10 @@ footer {
     justify-content: space-around;
 }
 
+.notas-logo {
+    border-radius: 9px;
+}
+
 .notas-logo:hover{
     width: 100%;
     height: 100%;

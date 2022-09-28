@@ -88,6 +88,10 @@ footer {
     flex-direction: row;
 }
 
+.servicios-logo {
+    border-radius: 9px;
+}
+
 .servicios-logo:hover{
     width: 100%;
     height: 100%;
