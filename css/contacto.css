@@ -92,6 +92,10 @@ footer {
     flex-direction: row;
 }
 
+.rrss {
+    border-radius: 7px;
+}
+
 .contacto-formulario {
     align-items: center;
     padding: 2%;

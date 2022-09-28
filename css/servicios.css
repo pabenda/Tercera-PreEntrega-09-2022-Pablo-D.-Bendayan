@@ -88,6 +88,10 @@ footer {
     flex-direction: row;
 }
 
+.rrss {
+    border-radius: 7px;
+}
+
 .servicios-logo {
     border-radius: 9px;
 }

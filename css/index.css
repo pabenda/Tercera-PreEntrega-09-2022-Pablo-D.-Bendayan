@@ -75,6 +75,8 @@ footer {
   font-size: 12px;
   align-items: center;
   flex-direction: row; }
+  .index-pie .rrss {
+    border-radius: 7px; }
 
 .index-textos-laterales {
   border: solid 1px aliceblue;
