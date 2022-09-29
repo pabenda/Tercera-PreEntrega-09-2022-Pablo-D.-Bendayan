@@ -125,21 +125,6 @@ footer {
     height: 120%; } }
 
 /* CONTACTO.HTML CSS */
-html, body {
-  height: 100%;
-  background: linear-gradient(blue, black);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
-
-* {
-  padding: 0;
-  margin: 0; }
-
-a {
-  color: aliceblue; }
-
-a:active {
-  color: aqua; }
-
 #grid-contacto {
   display: grid;
   height: 100%;
@@ -157,10 +142,6 @@ a:active {
     grid-template-rows: auto auto auto auto;
     grid-row-gap: 0.5%; } }
 
-header {
-  grid-area: header;
-  width: 100%; }
-
 .contacto-encabezado {
   display: flex;
   flex-direction: row;
@@ -170,9 +151,6 @@ header {
   font-weight: bold;
   text-decoration: double;
   flex-wrap: wrap; }
-
-main {
-  grid-area: main; }
 
 .contacto-main {
   display: flex;
@@ -198,9 +176,6 @@ main {
   font-size: 12px;
   align-items: center;
   flex-direction: row; }
-
-.rrss {
-  border-radius: 7px; }
 
 .contacto-formulario {
   align-items: center;
@@ -236,21 +211,6 @@ main {
     height: 120%; } }
 
 /* NOSOTROS.HTML CSS */
-html, body {
-  height: 100%;
-  background: linear-gradient(blue, black);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
-
-* {
-  padding: 0;
-  margin: 0; }
-
-a {
-  color: aliceblue; }
-
-a:active {
-  color: aqua; }
-
 #grid-nosotros {
   display: grid;
   height: 100%;
@@ -266,20 +226,11 @@ a:active {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto; } }
 
-header {
-  grid-area: header; }
-
-main {
-  grid-area: main; }
-
 .nosotros-main {
   align-self: center;
   justify-self: center;
   border: solid 2px aliceblue;
   color: aliceblue; }
-
-footer {
-  grid-area: footer; }
 
 .nosotros-encabezado {
   display: flex;
@@ -303,9 +254,6 @@ footer {
   font-size: 12px;
   align-items: center;
   flex-direction: row; }
-
-.rrss {
-  border-radius: 7px; }
 
 .nosotros-titulo1 {
   font-size: 12px;
@@ -358,21 +306,6 @@ footer {
     height: 120%; } }
 
 /* NOTAS.HTML CSS */
-html, body {
-  height: 100%;
-  background: linear-gradient(blue, black);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
-
-* {
-  padding: 0;
-  margin: 0; }
-
-a {
-  color: aliceblue; }
-
-a:active {
-  color: aqua; }
-
 #grid-notas {
   display: grid;
   height: 100%;
@@ -388,21 +321,12 @@ a:active {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto; } }
 
-header {
-  grid-area: header; }
-
-main {
-  grid-area: main; }
-
 .notas-main {
   display: flexbox;
   color: aliceblue;
   font-size: 13px;
   margin: auto;
   width: 95%; }
-
-footer {
-  grid-area: footer; }
 
 .notas-encabezado {
   display: flex;
@@ -473,21 +397,6 @@ footer {
     height: 120%; } }
 
 /* SERVICIOS.HTML CSS */
-html, body {
-  height: 100%;
-  background: linear-gradient(blue, black);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
-
-* {
-  padding: 0;
-  margin: 0; }
-
-a {
-  color: aliceblue; }
-
-a:active {
-  color: aqua; }
-
 #grid-servicios {
   display: grid;
   height: 100%;
@@ -504,13 +413,6 @@ a:active {
     grid-template-rows: auto auto auto;
     grid-row-gap: 0.5%; } }
 
-header {
-  grid-area: header;
-  width: 100%; }
-
-main {
-  grid-area: main; }
-
 .servicios-main {
   height: 40%;
   width: 70%;
@@ -518,9 +420,6 @@ main {
   align-self: auto;
   justify-self: center;
   color: aliceblue; }
-
-footer {
-  grid-area: footer; }
 
 .servicios-encabezado {
   display: flex;
@@ -545,9 +444,6 @@ footer {
   font-size: 12px;
   align-items: center;
   flex-direction: row; }
-
-.rrss {
-  border-radius: 7px; }
 
 .servicios-logo {
   border-radius: 9px; }

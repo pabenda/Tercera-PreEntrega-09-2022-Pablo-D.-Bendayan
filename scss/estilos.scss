@@ -1,4 +1,5 @@
 $color-letras: aliceblue;
+$color-letras-active: aqua;
 $gradiente-back: linear-gradient(blue,black);
 $ancho-pantalla: 1200px;
 
@@ -23,7 +24,7 @@ a {
 }
 
 a:active {
-    color: aqua;
+    color: $color-letras-active;
 }
 
 #index {
@@ -154,25 +155,6 @@ footer {
 }
 
 /* CONTACTO.HTML CSS */
-html, body {
-    height: 100%;
-    background: linear-gradient(blue,black);
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
-
-* {
-    padding: 0;
-    margin: 0;
-}
-
-a {
-    color: aliceblue;
-}
-
-a:active {
-    color: aqua;
-}
-
 #grid-contacto {
     display: grid;
     height: 100%;
@@ -199,17 +181,10 @@ a:active {
 }
 }
 
-
-header {
-    grid-area: header;
-    width: 100%;
-}
-
-
 .contacto-encabezado {
     display: flex;
     flex-direction: row;
-    border: 1px solid aliceblue;
+    border: 1px solid $color-letras;
     align-items: center;
     justify-content: space-around;
     font-weight: bold;
@@ -217,44 +192,32 @@ header {
     flex-wrap: wrap;
 }
 
-
-main {
-    grid-area: main;
-}
-
 .contacto-main {
     display: flex;
     flex-direction: row;
     align-self: center;
     justify-content: space-around;
-    border: solid 2px aliceblue;
-    color: aliceblue;
+    border: solid 2px $color-letras;
+    color: $color-letras;
     font-size: 13px;
     padding: 0.5%;
     flex-wrap: wrap;
 }
 
-
 .contacto-nav-texto {
     font-style: bold;
     font-size: larger;
-    color: aliceblue;
+    color: $color-letras;
 }
-
 
 .contacto-pie {
     display: flex;
     justify-content: space-around;
-    color: aliceblue;
+    color: $color-letras;
     flex-wrap: wrap;
     font-size: 12px;
     align-items: center;
     flex-direction: row;
-}
-
-
-.rrss {
-    border-radius: 7px;
 }
 
 .contacto-formulario {
@@ -276,7 +239,6 @@ main {
     animation-delay: 0s;
 }
 
-
 @keyframes agranda-logo {
     0% { width: 100%; height: 100%;}
     25% {width: 105%; height: 105%;}
@@ -286,27 +248,6 @@ main {
 }
 
 /* NOSOTROS.HTML CSS */
-html, body {
-    height: 100%;
-    background: linear-gradient(blue,black);
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
-
-* {
-    padding: 0;
-    margin: 0;
-}
-
-a {
-    color: aliceblue;
-}
-
-
-a:active {
-    color: aqua;
-}
-
-
 #grid-nosotros {
     display: grid;
     height: 100%;
@@ -331,30 +272,17 @@ a:active {
     }
 }
 
-header {
-    grid-area: header;
-}
-
-main {
-    grid-area: main;
-}
-
 .nosotros-main {
     align-self: center;
     justify-self: center;
-    border: solid 2px aliceblue;
-    color: aliceblue;
-}
-
-
-footer {
-    grid-area: footer;
+    border: solid 2px $color-letras;
+    color: $color-letras;
 }
 
 .nosotros-encabezado {
     display: flex;
     flex-direction: row;
-    border: 1px solid aliceblue;
+    border: 1px solid $color-letras;
     align-items: center;
     justify-content: space-around;
     font-weight: bold;
@@ -370,15 +298,11 @@ footer {
 .nosotros-pie {
     display: flex;
     justify-content: space-around;
-    color: aliceblue;
+    color: $color-letras;
     flex-wrap: wrap;
     font-size: 12px;
     align-items: center;
     flex-direction: row;
-}
-
-.rrss {
-    border-radius: 7px;
 }
 
 .nosotros-titulo1 {
@@ -420,7 +344,6 @@ footer {
     animation-delay: 0s;
 }
 
-
 @keyframes agranda-logo {
     0% { width: 100%; height: 100%;}
     25% {width: 105%; height: 105%;}
@@ -430,26 +353,6 @@ footer {
 }
 
 /* NOTAS.HTML CSS */
-html, body {
-    height: 100%;
-    background: linear-gradient(blue,black);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
-
-* {
-    padding: 0;
-    margin: 0;
-}
-
-a {
-    color: aliceblue;
-}
-
-
-a:active {
-    color: aqua;
-}
-
 #grid-notas {
     display: grid;
     height: 100%;
@@ -474,30 +377,18 @@ a:active {
     }
 }
 
-header {
-    grid-area: header;
-}
-
-main {
-    grid-area: main;
-}
-
 .notas-main {
     display: flexbox;
-    color: aliceblue;
+    color: $color-letras;
     font-size: 13px;
     margin:auto;
     width: 95%;
 }
 
-footer {
-    grid-area: footer;
-}
-
 .notas-encabezado {
     display: flex;
     flex-direction: row;
-    border: 1px solid aliceblue;
+    border: 1px solid $color-letras;
     align-items: center;
     justify-content: space-around;
     font-weight: bold;
@@ -508,13 +399,13 @@ footer {
 .notas-nav-texto {
     font-style: bold;
     font-size: larger;
-    color: aliceblue;
+    color: $color-letras;
 }
 
 .notas-pie {
     display: flex;
     justify-content: space-around;
-    color: aliceblue;
+    color: $color-letras;
     flex-wrap: wrap;
     font-size: 12px;
     align-items: center;
@@ -531,7 +422,6 @@ footer {
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
 
 .notas-par2 {
     display: flex;
@@ -563,25 +453,6 @@ footer {
 }
 
 /* SERVICIOS.HTML CSS */
-html, body {
-    height: 100%;
-    background: linear-gradient(blue,black);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
-
-* {
-    padding: 0;
-    margin: 0;
-}
-
-a {
-    color: aliceblue;
-}
-
-a:active {
-    color: aqua;
-}
-
 #grid-servicios {
     display: grid;
     height: 100%;
@@ -607,32 +478,19 @@ a:active {
     }
 }
 
-header {
-    grid-area: header;
-    width: 100%;
-}
-
-main {
-    grid-area: main;
-}
-
 .servicios-main {
     height: 40%;
     width: 70%;
     margin: auto;
     align-self: auto;
     justify-self: center;
-    color: aliceblue;
-}
-
-footer {
-    grid-area: footer;
+    color: $color-letras;
 }
 
 .servicios-encabezado {
     display: flex;
     flex-direction: row;
-    border: 1px solid aliceblue;
+    border: 1px solid $color-letras;
     align-items: center;
     justify-content: space-around;
     font-weight: bold;
@@ -643,21 +501,17 @@ footer {
 .servicios-nav-texto {
     font-style: bold;
     font-size: larger;
-    color: aliceblue;
+    color: $color-letras;
 }
 
 .servicios-pie {
     display: flex;
     justify-content: space-around;
-    color: aliceblue;
+    color: $color-letras;
     flex-wrap: wrap;
     font-size: 12px;
     align-items: center;
     flex-direction: row;
-}
-
-.rrss {
-    border-radius: 7px;
 }
 
 .servicios-logo {
