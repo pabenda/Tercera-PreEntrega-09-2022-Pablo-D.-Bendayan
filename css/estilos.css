@@ -1,0 +1,583 @@
+/* INDEX.HTML CSS */
+html, body {
+  height: 100%;
+  background: linear-gradient(blue, black);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+a {
+  color: aliceblue; }
+
+a:active {
+  color: aqua; }
+
+#index {
+  display: grid;
+  height: 100%;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto; }
+  #index #encabezadoix {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid aliceblue;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: bold;
+    text-decoration: double;
+    flex-wrap: wrap; }
+
+@media screen and (max-width: 599px) {
+  #index {
+    display: grid;
+    height: 100%;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto; }
+    #index #encabezadoix {
+      display: flex;
+      flex-direction: row;
+      border: 1px solid aliceblue;
+      align-items: center;
+      justify-content: space-around;
+      font-weight: bold;
+      text-decoration: double;
+      flex-wrap: wrap;
+      width: 100%;
+      padding: 0.3%; } }
+
+header {
+  grid-area: header; }
+
+main {
+  grid-area: main; }
+
+.index-main {
+  padding-top: 1%;
+  padding: 1%;
+  align-self: center;
+  justify-content: center;
+  border: solid 2px aliceblue;
+  color: aliceblue; }
+
+footer {
+  grid-area: footer; }
+
+.index-nav-texto {
+  font-style: bold;
+  font-size: larger; }
+
+.index-pie {
+  display: flex;
+  justify-content: space-around;
+  color: aliceblue;
+  flex-wrap: wrap;
+  font-size: 12px;
+  align-items: center;
+  flex-direction: row; }
+  .index-pie .rrss {
+    border-radius: 7px; }
+
+.index-textos-laterales {
+  border: solid 1px aliceblue;
+  margin-left: 00.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 00.5%;
+  width: 55%; }
+
+.index-imagen-textos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.index-logo {
+  border-radius: 9px; }
+
+.index-logo:hover {
+  width: 100%;
+  height: 100%;
+  animation-name: agranda-logo;
+  animation-iteration-count: initial;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-delay: 0s; }
+
+@keyframes agranda-logo {
+  0% {
+    width: 100%;
+    height: 100%; }
+  25% {
+    width: 105%;
+    height: 105%; }
+  50% {
+    width: 110%;
+    height: 110%; }
+  75% {
+    width: 115%;
+    height: 115%; }
+  100% {
+    width: 120%;
+    height: 120%; } }
+
+/* CONTACTO.HTML CSS */
+html, body {
+  height: 100%;
+  background: linear-gradient(blue, black);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+a {
+  color: aliceblue; }
+
+a:active {
+  color: aqua; }
+
+#grid-contacto {
+  display: grid;
+  height: 100%;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% 64% 15%;
+  grid-row-gap: 0.5%; }
+
+@media screen and (max-width: 599px) {
+  #grid-contacto {
+    display: grid;
+    height: 100%;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-row-gap: 0.5%; } }
+
+header {
+  grid-area: header;
+  width: 100%; }
+
+.contacto-encabezado {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid aliceblue;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: bold;
+  text-decoration: double;
+  flex-wrap: wrap; }
+
+main {
+  grid-area: main; }
+
+.contacto-main {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  justify-content: space-around;
+  border: solid 2px aliceblue;
+  color: aliceblue;
+  font-size: 13px;
+  padding: 0.5%;
+  flex-wrap: wrap; }
+
+.contacto-nav-texto {
+  font-style: bold;
+  font-size: larger;
+  color: aliceblue; }
+
+.contacto-pie {
+  display: flex;
+  justify-content: space-around;
+  color: aliceblue;
+  flex-wrap: wrap;
+  font-size: 12px;
+  align-items: center;
+  flex-direction: row; }
+
+.rrss {
+  border-radius: 7px; }
+
+.contacto-formulario {
+  align-items: center;
+  padding: 2%; }
+
+.contacto-logo {
+  border-radius: 9px; }
+
+.contacto-logo:hover {
+  width: 100%;
+  height: 100%;
+  animation-name: agranda-logo;
+  animation-iteration-count: initial;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-delay: 0s; }
+
+@keyframes agranda-logo {
+  0% {
+    width: 100%;
+    height: 100%; }
+  25% {
+    width: 105%;
+    height: 105%; }
+  50% {
+    width: 110%;
+    height: 110%; }
+  75% {
+    width: 115%;
+    height: 115%; }
+  100% {
+    width: 120%;
+    height: 120%; } }
+
+/* NOSOTROS.HTML CSS */
+html, body {
+  height: 100%;
+  background: linear-gradient(blue, black);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+a {
+  color: aliceblue; }
+
+a:active {
+  color: aqua; }
+
+#grid-nosotros {
+  display: grid;
+  height: 100%;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto; }
+
+@media screen and (max-width: 599px) {
+  #grid-nosotros {
+    display: grid;
+    height: 100%;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto; } }
+
+header {
+  grid-area: header; }
+
+main {
+  grid-area: main; }
+
+.nosotros-main {
+  align-self: center;
+  justify-self: center;
+  border: solid 2px aliceblue;
+  color: aliceblue; }
+
+footer {
+  grid-area: footer; }
+
+.nosotros-encabezado {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid aliceblue;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: bold;
+  text-decoration: double;
+  flex-wrap: wrap; }
+
+.nosotros-nav-texto {
+  font-style: bold;
+  font-size: larger; }
+
+.nosotros-pie {
+  display: flex;
+  justify-content: space-around;
+  color: aliceblue;
+  flex-wrap: wrap;
+  font-size: 12px;
+  align-items: center;
+  flex-direction: row; }
+
+.rrss {
+  border-radius: 7px; }
+
+.nosotros-titulo1 {
+  font-size: 12px;
+  margin: auto; }
+
+.nosotros-tabla1 {
+  margin: auto; }
+
+.nosotros-titulo2 {
+  margin-top: 3%;
+  font-size: 12px;
+  padding: 2%; }
+
+.nosotros-marcas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 12px;
+  justify-content: space-around;
+  margin: auto;
+  padding: 2%; }
+
+.nosotros-logo {
+  border-radius: 9px; }
+
+.nosotros-logo:hover {
+  width: 100%;
+  height: 100%;
+  animation-name: agranda-logo;
+  animation-iteration-count: initial;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-delay: 0s; }
+
+@keyframes agranda-logo {
+  0% {
+    width: 100%;
+    height: 100%; }
+  25% {
+    width: 105%;
+    height: 105%; }
+  50% {
+    width: 110%;
+    height: 110%; }
+  75% {
+    width: 115%;
+    height: 115%; }
+  100% {
+    width: 120%;
+    height: 120%; } }
+
+/* NOTAS.HTML CSS */
+html, body {
+  height: 100%;
+  background: linear-gradient(blue, black);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+a {
+  color: aliceblue; }
+
+a:active {
+  color: aqua; }
+
+#grid-notas {
+  display: grid;
+  height: 100%;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto; }
+
+@media screen and (max-width: 599px) {
+  #grid-notas {
+    display: grid;
+    height: 100%;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto; } }
+
+header {
+  grid-area: header; }
+
+main {
+  grid-area: main; }
+
+.notas-main {
+  display: flexbox;
+  color: aliceblue;
+  font-size: 13px;
+  margin: auto;
+  width: 95%; }
+
+footer {
+  grid-area: footer; }
+
+.notas-encabezado {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid aliceblue;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: bold;
+  text-decoration: double;
+  flex-wrap: wrap; }
+
+.notas-nav-texto {
+  font-style: bold;
+  font-size: larger;
+  color: aliceblue; }
+
+.notas-pie {
+  display: flex;
+  justify-content: space-around;
+  color: aliceblue;
+  flex-wrap: wrap;
+  font-size: 12px;
+  align-items: center;
+  flex-direction: row; }
+
+.rrss {
+  border-radius: 7px; }
+
+.notas-par1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.notas-par2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.notas-logo {
+  border-radius: 9px; }
+
+.notas-logo:hover {
+  width: 100%;
+  height: 100%;
+  animation-name: agranda-logo;
+  animation-iteration-count: initial;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-delay: 0s; }
+
+@keyframes agranda-logo {
+  0% {
+    width: 100%;
+    height: 100%; }
+  25% {
+    width: 105%;
+    height: 105%; }
+  50% {
+    width: 110%;
+    height: 110%; }
+  75% {
+    width: 115%;
+    height: 115%; }
+  100% {
+    width: 120%;
+    height: 120%; } }
+
+/* SERVICIOS.HTML CSS */
+html, body {
+  height: 100%;
+  background: linear-gradient(blue, black);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+a {
+  color: aliceblue; }
+
+a:active {
+  color: aqua; }
+
+#grid-servicios {
+  display: grid;
+  height: 100%;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 19% auto 15%; }
+
+@media screen and (max-width: 599px) {
+  #grid-servicios {
+    display: grid;
+    height: 100%;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 0.5%; } }
+
+header {
+  grid-area: header;
+  width: 100%; }
+
+main {
+  grid-area: main; }
+
+.servicios-main {
+  height: 40%;
+  width: 70%;
+  margin: auto;
+  align-self: auto;
+  justify-self: center;
+  color: aliceblue; }
+
+footer {
+  grid-area: footer; }
+
+.servicios-encabezado {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid aliceblue;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: bold;
+  text-decoration: double;
+  flex-wrap: wrap; }
+
+.servicios-nav-texto {
+  font-style: bold;
+  font-size: larger;
+  color: aliceblue; }
+
+.servicios-pie {
+  display: flex;
+  justify-content: space-around;
+  color: aliceblue;
+  flex-wrap: wrap;
+  font-size: 12px;
+  align-items: center;
+  flex-direction: row; }
+
+.rrss {
+  border-radius: 7px; }
+
+.servicios-logo {
+  border-radius: 9px; }
+
+.servicios-logo:hover {
+  width: 100%;
+  height: 100%;
+  animation-name: agranda-logo;
+  animation-iteration-count: initial;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-delay: 0s; }
+
+@keyframes agranda-logo {
+  0% {
+    width: 100%;
+    height: 100%; }
+  25% {
+    width: 105%;
+    height: 105%; }
+  50% {
+    width: 110%;
+    height: 110%; }
+  75% {
+    width: 115%;
+    height: 115%; }
+  100% {
+    width: 120%;
+    height: 120%; } }
+
+/* PAGINAS NOTAS CSS */
+.websiteEC {
+  margin-left: 30%; }
