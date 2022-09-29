@@ -8,9 +8,13 @@ html, body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
+@mixin measures ($padding, $margin) {
+    padding: $padding;
+    margin: $margin;
+}
+
 * {
-    padding: 0;
-    margin: 0;
+   @include measures(0, 0)
 }
 
 a {
@@ -65,9 +69,13 @@ a:active {
     }
 }
 
+@mixin measures2 ($width) {
+    width: $width;
+}
+
 header {
     grid-area: header;
-    width: 100%;
+    @include measures2(100%)
     padding: 0.3%;
 }
 
